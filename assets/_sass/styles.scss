@@ -120,12 +120,14 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
   .expanded {
     &:before {
       content: "▼ ";
+      color: $pacific_blue;
     }
   }
 
   .collapsed {
     &:before {
       content: "▶ ";
+      color: $pacific_blue;
     }
   }
 
