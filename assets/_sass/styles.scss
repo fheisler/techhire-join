@@ -9,8 +9,8 @@ $white:               #fff;
 $black:               #323A45; // gray-dark
 
 // Fonts
-$serif:               'Merriweather', Georgia, serif;
-$sans-serif:          'Source Sans Pro', sans-serif;
+$serif:               'Lato', Helvetica, serif;
+$sans-serif:          'Montserrat', sans-serif;
 
 // Mobile Breakpoints
 $mobile: new-breakpoint(min-width 0px max-width 640px 4);
@@ -22,10 +22,6 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
     font-family: $serif;
     margin: 0;
     line-height: 1.5em;
-  }
-
-  body#techfar_landing_page {
-    background: $atlantic_blue;
   }
 
   a {
@@ -44,6 +40,23 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
 
   a:hover {
     text-decoration: underline;
+  }
+
+  a.expander {
+    cursor: pointer;
+    text-decoration: none !important;
+  }
+
+  a.expanded {
+    &:before {
+      content: "▼ ";
+    }
+  }
+
+  a.collapsed {
+    &:before {
+      content: "▶ ";
+    }
   }
 
   ol, ul {
@@ -194,7 +207,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
       color: $atlantic_blue;
     }
 
-    #usds_logo {
+    #techhire_logo {
       display: inline-block;
       img {
         max-height: 100%;
@@ -203,7 +216,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
       }
     }
     
-    #usds_logo:hover {
+    #techhire_logo:hover {
       background: none;
       opacity: 0.7;
     }
@@ -445,7 +458,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
     }
   }
 
-  #plays, #techfar {
+  #plays {
     h2, h3 {
       @include span-columns(8);
     }
@@ -514,21 +527,6 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
       p {
         @include span-columns(10);
       }
-    }
-  }
-
-  #techfar {
-    em {
-      font-size: 12px;
-      // margin-right: 5px;
-      line-height: 0;
-      vertical-align: super;
-    }
-    h2, h4 {
-      margin-top: 20px;
-    }
-    img {
-      max-width: 100%;
     }
   }
 }
