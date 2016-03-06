@@ -1,5 +1,9 @@
-permalink: pretty
 url: http://playbook.techhire.org
+
+markdown: kramdown
+permalink: pretty
+gems: ['kramdown']
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
 
 collections:
   - plays
