@@ -22,7 +22,7 @@
       <a href="#introduction"><h3>TechHire Playbook</h3></a>
       <ul class="nav">
         {% for play in site.plays %}
-          <li class="play_square"><a href="#play{{ play.id }}" title="View Play {{ play.num }}: {{ play.title }}">{{ play.num }}</a></li>
+          <li class="play_square"><a href="#play{{ play.num }}" title="View Play {{ play.num }}: {{ play.title }}">{{ play.num }}</a></li>
         {% endfor %}
       </ul>
       <div id="menu_icon">
@@ -56,12 +56,12 @@
       <div class="columns">
         <ol>
         {% for play in site.plays %}
-          <li><a href="#play{{ play.id }}" title="View Play {{ play.id }}">{{ play.title }}</a></li>
+          <li><a href="#play{{ play.num }}" title="View Play {{ play.num }}">{{ play.title }}</a></li>
         {% endfor %}
         </ol>
       </div>
       <div class="button">
-        <a href="#play/plays/01" title="View the In Detail">In detail</a>
+        <a href="#play1" title="View the In Detail">In detail</a>
       </div>
     </div>
   </div>
@@ -70,7 +70,7 @@
 <div id="plays" class="outer_container">
   {% for play in site.plays %}
     <div class="inner_container">
-      <a class="anchor_offset" id="play{{ play.id }}"></a>
+      <a class="anchor_offset" id="play{{ play.num }}"></a>
       <h6>PLAY {{ play.num }}</h6>
       <h2 class="display">{{ play.title }}</h2>
 
