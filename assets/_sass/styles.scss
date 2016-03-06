@@ -488,13 +488,28 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
       margin-top: 0px;
     }
 
+    ul {
+      list-style-image: url("../images/bullet-circle1.svg");
+      margin-top: 0px;
+
+      ul {
+        li {
+          width: auto;
+          list-style-image: url("../images/bullet-circle.svg");
+        }
+
+        ul {
+          li {
+            width: auto;
+            list-style-image: url("../images/bullet-sq.svg");
+          }
+        }
+      }
+
     li {
       padding-left: 5px;
       font-size: 15px;
-    }
-
-    ul {
-      list-style-image: url("../images/bullet-circle.svg");
+      }
     }
 
     a {
