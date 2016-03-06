@@ -493,12 +493,16 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
       margin-top: 0px;
 
       ul {
+        width: auto;
+
         li {
           width: auto;
           list-style-image: url("../images/bullet-circle.svg");
         }
 
         ul {
+          width: auto;
+
           li {
             width: auto;
             list-style-image: url("../images/bullet-sq.svg");
