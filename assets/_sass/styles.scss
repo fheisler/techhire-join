@@ -479,7 +479,6 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
 
     ol, ul {
       @include span-columns(8);
-      list-style-position: outside;
       padding-left: 25px;
     }
 
