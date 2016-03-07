@@ -47,9 +47,6 @@
     <div class="button">
       <a href="#plays_index_anchor" title="View the Plays">See the plays</a>
     </div>
-    <div class="button">
-      <a href="https://github.com/techhire/playbook#readme" title="Visit Github to Improve This Content">Help improve this content</a>
-    </div>
   </div>
 </div>
 
@@ -76,7 +73,10 @@
   {% for play in site.plays %}
     <div class="inner_container">
       <a class="anchor_offset" id="play{{ play.num }}"></a>
-      <h6>PLAY {{ play.num }}</h6>
+      <h6>
+        PLAY {{ play.num }}
+        <a class="edit-play" target="_blank" href="{{ site.github.repository_url }}/edit/gh-pages/_plays/0{{ play.num }}.md">Suggest an improvement</a>
+      </h6>
       <h2 class="display">{{ play.title }}</h2>
 
       {{ play.output }}

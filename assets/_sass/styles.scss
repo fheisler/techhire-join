@@ -530,12 +530,12 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
 
     a {
       color: #0071bc;
-      text-decoration: underline;
+      text-decoration: none;
       display: inline-block;
     }
 
     a:visited {
-      color: #4c2c92;
+      color: #0071bc;
     }
 
     @include media($mobile) {
@@ -563,6 +563,12 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
     }
   }
 }
+
+.edit-play {
+  margin-left: 20px;
+  font-size: 12px;
+}
+
 
 @media print {
   body {
