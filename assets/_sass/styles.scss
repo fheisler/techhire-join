@@ -117,7 +117,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
     text-decoration: none !important;
   }
 
-  .expanded {
+  .expanded, .checked {
     &:before {
       content: "✓ ";
       color: $pacific_blue;
@@ -496,7 +496,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
 
         li {
           width: auto;
-          list-style-image: url("../images/bullet-circle.svg");
+          list-style-image: url("../images/bullet-sq.svg");
         }
 
         ul {
@@ -504,7 +504,7 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
 
           li {
             width: auto;
-            list-style-image: url("../images/bullet-sq.svg");
+            list-style-image: url("../images/bullet-circle.svg");
           }
         }
       }
