@@ -113,9 +113,22 @@ $slimmer: new-breakpoint(min-width 641px max-width 980px 12);
   }
 
   .header {
-    width: 350px;
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    padding: 10px;
+
     .logo {
-      margin: 15px 0 10px 40px;
+      width: 20%;
+      height: 55px;
+      float: left;
+    }
+    .backlink {
+      color: $atlantic_blue;
+      margin-left: 86%;
+      margin-top: 10px;
+      height: 60px;
+      /*float: right;*/
     }
   }
 
