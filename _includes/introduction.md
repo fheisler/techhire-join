@@ -1,3 +1,5 @@
 # TechHire Playbook
 
-[Intro paragraph on the collective impact work of TechHire.]
+TechHire is a market-based collective impact model, in which employers work together on a regional basis, along with training providers, civic institutions, and other partners to source and place nontraditional candidates. 
+
+This is a playbook for building a TechHire ecosystem. There are specific actions in here for civic institutions or other local leaders of TechHire, employers, training providers, and intermediaries that match job seekers with jobs or individuals with employers. This playbook is "open source," and we look forward to TechHire stakeholders improving and adding materials to this playbook over time. Suggestions for improving the playbook can be made by clicking 'Suggest an improvement' (next to each action) and submitting your suggestion in GitHub. You will need a GitHub account to contribute.
